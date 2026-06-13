@@ -538,7 +538,7 @@ with crop_col_img:
 st.markdown("<div style='height:8px'></div>", unsafe_allow_html=True)
 btn_col, _ = st.columns([1, 2])
 with btn_col:
-    go = st.button("🍱 Nhận diện & tính tiền", disabled=(tray_image is None))
+    go = st.button(" Nhận diện & tính tiền", disabled=(tray_image is None))
 
 # ═══════════════════════════════════════════════════════
 # Results
