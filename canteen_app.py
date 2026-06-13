@@ -160,7 +160,7 @@ def count_eggs_yolo(yolo, img):
 def fmt(n): return f"{n:,}₫".replace(",", ".")
 
 # ═══════════════════════════════════════════════════════
-st.set_page_config(page_title="Canteen Auto-Billing", page_icon="🍱", layout="wide")
+st.set_page_config(page_title="Canteen Auto-Billing", layout="wide")
 
 st.markdown("""
 <style>
@@ -436,16 +436,16 @@ with col_settings:
     # ── Camera adjustments ──
     st.markdown("""
     <div class="settings-title">
-      <span class="settings-title-icon">🎛️</span> Chỉnh thông số ảnh
+      <span class="settings-title-icon"></span> Chỉnh thông số ảnh
     </div>""", unsafe_allow_html=True)
 
     cam_col1, cam_col2 = st.columns(2)
     with cam_col1:
-        brightness = st.slider("☀️ Độ sáng", 0.5, 2.0, 1.0, 0.05, key="brightness")
-        contrast   = st.slider("◑ Tương phản", 0.5, 2.0, 1.0, 0.05, key="contrast")
+        brightness = st.slider(" Độ sáng", 0.5, 2.0, 1.0, 0.05, key="brightness")
+        contrast   = st.slider(" Tương phản", 0.5, 2.0, 1.0, 0.05, key="contrast")
     with cam_col2:
-        saturation = st.slider("🎨 Màu sắc", 0.0, 2.0, 1.0, 0.05, key="saturation")
-        sharpness  = st.slider("🔍 Độ sắc nét", 0.0, 2.0, 1.0, 0.05, key="sharpness")
+        saturation = st.slider(" Màu sắc", 0.0, 2.0, 1.0, 0.05, key="saturation")
+        sharpness  = st.slider(" Độ sắc nét", 0.0, 2.0, 1.0, 0.05, key="sharpness")
 
     if st.button("↺ Reset về mặc định", key="reset_cam"):
         st.session_state.brightness = 1.0
