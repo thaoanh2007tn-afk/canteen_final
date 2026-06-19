@@ -17,7 +17,7 @@ try:
 except ImportError:
     YOLO_AVAILABLE = False
 
-CNN_MODEL_PATH  = "food_model.h5"
+CNN_MODEL_PATH  = "food_cnn.h5"
 YOLO_MODEL_PATH = "egg.pt"
 CLASS_NAMES_TXT = "class_names.txt"
 IMG_SIZE        = 128
